@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -8,27 +8,68 @@
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 780px; margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #1f2933; background: #f8fafc; }
     .card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; }
     a { color: #0f766e; }
+    code { background: #f1f5f9; padding: 2px 5px; border-radius: 4px; font-size: 0.9em; }
   </style>
 </head>
 <body>
   <p><a href="index.html">&larr; Back to Wildlife Shorts Studio</a></p>
   <div class="card">
     <h1>Privacy Policy</h1>
-    <p><em>Last updated: November 21, 2026</em></p>
+    <p><em>Last updated: November 24, 2026</em></p>
     <p><strong>Wildlife Shorts Studio</strong> respects your privacy. All video analysis, cropping, and encoding run locally on your Windows PC.</p>
+
     <h2>1. Information We Collect</h2>
     <p>We do <strong>not</strong> operate any external backend server and we do <strong>not</strong> collect, track, sell, or share personal data, telemetry, or analytics.</p>
-    <h2>2. OAuth Tokens &amp; API Access</h2>
-    <p>When you connect your own YouTube, TikTok, or Instagram account via OAuth 2.0, the application only requests the permissions required to upload videos you explicitly approve (for example, <code>youtube.upload</code> or TikTok video upload scopes).</p>
-    <ul>
-      <li>Access tokens and refresh tokens are stored <strong>exclusively on your local hard drive</strong> inside your local configuration folder.</li>
-      <li>Tokens are sent directly from your computer over HTTPS to the official Google, TikTok, or Meta API endpoints solely to perform user-initiated uploads or refresh expired tokens.</li>
-    </ul>
-    <h2>3. Third-Party Privacy Policies</h2>
-    <p>API requests made by your authorized sessions are subject to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and the respective TikTok and Meta privacy policies. You can revoke access at any time from your Google, TikTok, or Instagram security settings, or by clicking Disconnect inside the application.</p>
-    <h2>4. Data Retention &amp; Deletion</h2>
-    <p>You can delete all stored credentials and local databases at any time by removing your local configuration files or using the application cleanup options.</p>
-    <h2>5. Contact</h2>
+
+    <h2>2. Google User Data &amp; YouTube API Services</h2>
+    <h3>2.1. Google User Data Accessed</h3>
+    <p>
+      Wildlife Shorts Studio requests only the OAuth 2.0 scope
+      <code>https://www.googleapis.com/auth/youtube.upload</code>. This permission is used solely
+      to upload user-approved videos along with user-configured metadata (title, description, tags,
+      and privacy status) to the authenticated user's YouTube channel. The application does not
+      read, list, modify, or delete existing YouTube videos, playlists, comments, subscriptions,
+      or personal Google profile information.
+    </p>
+
+    <h3>2.2. Data Sharing, Transfer, and Disclosure</h3>
+    <p>
+      Wildlife Shorts Studio does not sell, share, transfer, or disclose Google user data or OAuth
+      tokens to any third parties, advertisers, or external servers. All API requests occur directly
+      between the local desktop application on the user's device and official Google/YouTube API
+      endpoints. Wildlife Shorts Studio's use of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.
+    </p>
+
+    <h3>2.3. Data Protection Mechanisms</h3>
+    <p>
+      Authentication uses OAuth 2.0 with PKCE (S256) over HTTPS and a local loopback redirect
+      (<code>127.0.0.1</code>). OAuth access and refresh tokens are stored exclusively on your
+      local hard drive inside your local configuration folder and are never transmitted to any
+      developer-controlled or third-party server.
+    </p>
+
+    <h3>2.4. Data Retention and Deletion</h3>
+    <p>
+      OAuth tokens and local configuration data are retained locally only for as long as you keep
+      your account connected to the application. You can disconnect your account and delete all
+      stored credentials and local databases at any time from within the application or by removing
+      your local configuration files. You can also revoke Google access directly at any time via your
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a>
+      page, which immediately terminates all API access. No user data is retained on external servers.
+    </p>
+
+    <h2>3. Other Platform Integrations &amp; Third-Party Policies</h2>
+    <p>
+      When you connect your own TikTok or Instagram account via OAuth 2.0, tokens are likewise stored
+      exclusively on your local machine and sent only over HTTPS to official platform endpoints for
+      user-initiated uploads. API requests made by your authorized sessions are subject to the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+      and the respective TikTok and Meta privacy policies.
+    </p>
+
+    <h2>4. Contact</h2>
     <p>If you have any privacy questions or deletion requests, contact: <a href="mailto:martin05mlg@gmail.com">martin05mlg@gmail.com</a>.</p>
   </div>
 </body>
